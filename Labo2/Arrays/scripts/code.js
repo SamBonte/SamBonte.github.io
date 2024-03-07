@@ -1,31 +1,34 @@
 
 //Array met familieleden
-let familieleden = ["Sam","Mat","Nat","Eli","Floor"];
+
 const setup = () => {
     //Aantal familieleden afdrukken op de console
     //alsook 1ste, 3de en 5de element in de array
-    console.log("Aantal familieleden:", familieleden.length);
-    console.log("Eerste element:", familieleden[0]);
-    console.log("Derde element:", familieleden[2]);
-    console.log("Vijfde element:", familieleden[4]);
+    let familie = ["Sam","Mat","Nat","Eli","Floor"];
+    console.log("Aantal familieleden:", familie.length);
 
-    //Voegt member toevoegen en de array afdrukken op de console
-    let newMember = prompt("Add new member:");
-    VoegNaamToe(newMember);
-    console.log("Array na toevoeging member: ", familieleden);
+    // oneven elementen afdrukken
+    for (let i = 0; i < familie.length; i=i+2)
+    {
+        console.log("familielid " + familie[i] );
+    }
 
-    //Array omzetten naar een string
-    let familieString = familieleden.join(", ");
-    console.log("Array als string: ", familieString);
+    // oproepen functie (doorgeven via
+    voegNaamToe(familie);
 
+    console.log (familie.join(" - "));
+}
+
+const voegNaamToe = (leden) =>
+{
+    let naam =    prompt("voeg een naam toe");
+    leden.push(naam);
+    for (let i = 0; i < leden.length; i++)
+    {
+        console.log("familielid " + leden[i] );
+    }
 
 }
 window.addEventListener("load", setup);
-
-//functie om member aan de familieleden toe te voegen
-const VoegNaamToe = (naam) => {
-    familieleden.push(naam);
-    console.log(familieleden);
-}
 
 

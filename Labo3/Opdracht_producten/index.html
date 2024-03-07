@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Opdracht producten</title>
+</head>
+<body>
+<!--in js niet prijs als const/variabele
+    prijs moet je uit je HTML halen
+    eerst met '.' dan ','-->
+<table>
+    <thead>
+        <tr>
+            <td>producten</td>
+            <td>prijs</td>
+            <td>aantal</td>
+            <td>btw</td>
+            <td>subtotaal</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>product1</td>
+            <td class="bedrag prijs">10,00 Eur</td>
+            <td><input type="number" class="aantal" value="0"></td>
+            <td class="btw">6%</td>
+            <td class="bedrag subtotaal">0,00 Eur</td>
+        </tr>
+        <tr>
+            <td>product2</td>
+            <td class="bedrag prijs">15,00 Eur</td>
+            <td><input type="number" class="aantal" value="0"></td>
+            <td class="btw">21%</td>
+            <td class="bedrag subtotaal">0,00 Eur</td>
+        </tr>
+        <tr>
+            <td>product3</td>
+            <td class="bedrag prijs">12,20 Eur</td>
+            <td><input type="number" class="aantal" value="0"></td>
+            <td class="btw">21%</td>
+            <td class="bedrag subtotaal">0,00 Eur</td>
+        </tr>
+        <tr>
+            <td>product4</td>
+            <td class="bedrag prijs">20,20 Eur</td>
+            <td><input type="number" class="aantal" value="0"></td>
+            <td class="btw">30%</td>
+            <td class="bedrag subtotaal">0,00 Eur</td>
+        </tr>
+        <tr>
+            <td colspan="4">totaal</td>
+            <td class="bedrag totaal">0,00 Eur</td>
+        </tr>
+    </tbody>
+</table>
+<input type="button" id="btnHerbereken" value="Herbereken"/>
+
+<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+</body>
+</html>

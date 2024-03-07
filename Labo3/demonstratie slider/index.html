@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="nl">
+<head> 
+	<title>Demonstratie slider</title>
+	<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+	<link rel="stylesheet" href="styles/styles.css"/>
+</head> 
+<body> 
+<section>
+	<p>Open het console venster, versleep daarna de slider hieronder en kijk welke berichten er komen</p>
+	<input type="range" class="slider" value="50" min="0" max="100" />
+</section>
+<section>
+<p>Een gekleurd blokje :</p>
+<div class="colorDemo" />
+</section>
+<hr>
+<p>Waar wordt slicer aan eventlistener gekoppeld ?</p>
+<p>In de setup functie</p>
+<br>
+<p>Waarom 2 events gekoppeld ?</p>
+<p>Om zowel de waarde te veranderen als men het versleept</p>
+<p>En ook om de waarde te veranderen als je losslaat</p>
+<br>
+<p>Waar wordt rode kleur toegekent ?</p>
+<p>"colorDemos[0].style.backgroundColor="red";"</p>
+<br>
+<p>Waarom schrijven we telkens sliders[0] en colorDemos[0] en niet gewoon sliders of
+	colorDemos?</p>
+<p>Omdat het een array is die we opvragen .getElementsByClassName</p>
+<p>Waar CSS properties die programmatorisch werden gedef. ?</p>
+<p>Bij accesibility DevTools, of bij sources page, code .js</p>
+<br>
+<p>De rest van de vragen zijn beantwoord via screenshots in het woorddocument, zie map vragen_labo3</p>
+</body> 
+</html> 

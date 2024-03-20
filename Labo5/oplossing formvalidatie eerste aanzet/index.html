@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang="nl">
+<head> 
+	<title>Oefening</title> 
+	<link rel="stylesheet" href="styles/styles.css">
+	<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+</head> 
+
+<body> 
+
+	<form>
+		<div class="line" id="voornaam">
+			<label>Voornaam:</label>
+			<input type="text" />
+			<span class="errorMessage"></span>
+		</div><br>
+		<div class="line2" id="familienaam">
+			<label>Familienaam*:</label>
+			<input type="text" required="required"/>
+			<span class="errorMessage"></span>
+		</div><br>
+		<div class="line3" id="geboortedatum">
+			<label>Geboortedatum*:</label>
+			<input type="text" placeholder=" jjjj-mm-dd " required="required"/>
+			<span class="errorMessage"></span>
+		</div><br>
+		<div class="line4" id="email">
+			<label>Email*:</label>
+			<input type="email" required="required"/>
+			<span class="errorMessage" ></span>
+		</div><br>
+		<div class="line5" id="aantalkids">
+			<label>Aantal kinderen:</label>
+			<input type="number" />
+			<span class="errorMessage" ></span>
+		</div><br>
+
+
+
+
+		<br><br>
+		<input type="button" id="btnValideer" value="Valideer" />
+	</form>
+
+</body> 
+</html> 

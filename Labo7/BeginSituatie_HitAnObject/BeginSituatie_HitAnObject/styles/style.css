@@ -1,0 +1,21 @@
+html, body {
+    margin:1px;
+}
+
+#playField{
+    position:relative;
+    border:solid 1px black;
+    box-sizing:border-box;
+    height: 400px;
+    width: 800px;
+// aanvullen met hoogte en breedte
+}
+
+/*target = image, image id geven target*/
+#target {
+    position: absolute;
+}
+
+#highScoreTekst {
+
+}

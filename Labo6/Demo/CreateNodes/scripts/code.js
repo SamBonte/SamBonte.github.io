@@ -8,6 +8,7 @@ const setup = () => {
     //geef van element de class
     console.log(element.getAttribute("class"));
 
+    //inhoud toevoegen aan het net gecreërde p element
     let textNode = document.createTextNode("Hello world!"); //create TextNode
     element.appendChild(textNode); //
     //voeg element toe aan HTML pagina, zoek naar id="myDiv" en hang daar element achter.

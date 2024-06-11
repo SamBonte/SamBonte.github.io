@@ -1,7 +1,7 @@
 const setup = () => {
     let txtInput = document.getElementById("txtInput").value;
     document.getElementById("btnDeWordtHet")
-        .addEventListener("click", vervangDeDoorHet(txtInput, "de", "het"));
+        .addEventListener("click", () => {vervangDeDoorHet(txtInput, "de", "het");});
 
 }
 

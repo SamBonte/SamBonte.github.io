@@ -35,7 +35,7 @@ const setColorPickerFromSwatch = (event) => {
 
 
         // helaas triggeren de .value wijzigingen niet automatisch
-        // een change event ds moeten we handmatig update oproepen
+        // een change event dus moeten we handmatig update oproepen
         update();
     }
 };

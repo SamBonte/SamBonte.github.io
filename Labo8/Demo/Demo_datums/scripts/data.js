@@ -10,7 +10,7 @@ const setup = () => {
     //dag van de week
     console.log((start.getDay()));
 
-    //maand-jaar-dag
+    //maand-jaar-dag | Maand 0-11 daarom +1 !!!
     console.log((start.getMonth()) + 1);
 
     console.log((start.getFullYear()));
@@ -46,15 +46,17 @@ const setup = () => {
             gevonden = true;
         }
     }
-
+    //aantal milliseconden alive = ms
     let aantalMsAlive = systeemDatum - geboorteDatum;
+    //milliseconden naar een dag = 1000 * 60 * 60 * 24
     let oneDay = 1000 * 60 * 60 * 24;
     let aantalDagenAlive = aantalMsAlive/(oneDay);
     console.log("aantal dagen bestaat: ", parseInt(aantalDagenAlive.toString()));
+    //op welke dag geboren ?
     console.log("Day of birth: ",birthDay);
 
 
-    //op welke dag geboren ?
+
 
 }
 window.addEventListener("load", setup);

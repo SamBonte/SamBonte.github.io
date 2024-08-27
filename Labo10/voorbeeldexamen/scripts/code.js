@@ -110,6 +110,10 @@ const evalueerGok = (woord, gok) => {
         if (char === letter){
             letterDiv  = createLetter(char, "juist");
             aantalJuisteLetters++;
+            if (woord.value === gok.value){
+                gewonnen();
+            }
+
         } else  if (woord.indexOf(char) !== -1){
             //het bestaat als verschillend van -1
             letterDiv = createLetter(char, "bevat");
@@ -155,6 +159,7 @@ const doHelp = (event) => {
     help[0].append(text);
 }
 const gewonnen = () => {
+
     console.log("gewonnen");
     document.getElementById("btnGo").classList.add("hidden");
     document.getElementById("btnNieuw").classList.remove("hidden");
@@ -169,6 +174,18 @@ const gewonnen = () => {
 
 const compare = (a,b) => {
     return a.gokken - b.gokken;
+}
+
+const maakScoreBord = (highscoreList) => {
+    let scorebord = document.getElementById("highscores");
+    //maak pElement & textnode aan voor iedere highscore in highscoreList
+    //sla h1 element over
+    for (let i = 1; i < highscoreList.length; i++) {
+        console.log(highscoreList[i]);
+        /*let pElement = document.createElement("p");
+    pElement.innerHTML = */
+    }
+
 }
 
 window.addEventListener("load", setup);
